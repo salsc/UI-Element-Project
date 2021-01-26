@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(84, 0, 0);
+    padding: 5%;
+    margin: 5%;
+    color: rgb(106, 0, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+header {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#imageStuff {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 360px;
+    min-height: 360px;
+}
+
+#dailyImageSD {
+    width: 100%;
+    display: inline;
+    object-fit: contain;
+}
+
+#dailyImageHD {
+    display: none;
+}
+
+.thePic {
+    width: 100%;
+    object-fit: contain;
+}
+
+#moreInfo {
+    text-align: left;
+    width:100%;
+}
+
+.nav {
+    background-color:rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: rgb(0, 138, 5);
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 15px;
+}
+
+.nav a.hover {
+    background-color:rgb(50, 38, 38);
+    color: rgb(0, 0, 0);
+}
+
+.nav .active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255)
+}
+
+.nav .icon {
+    display: none;
+    background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 700px) {
+
+    .nav a:not(:first-child) {
+        display: none;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .nav.squishy {
+        position: relative;
+    }
+
+    .nav.squishy a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.squishy a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    body, main {
+        margin: 0;
+        padding: 0;
+    }
+}

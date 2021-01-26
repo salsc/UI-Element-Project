@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Astronomy Daily Photo</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>APOD</h1>
+        <h2>Astronomy Picture of the Day</h2>
+        <div class="nav" id="myNav">
+            <a href="#" class="active" id="sd">Today's Photo (SD)</a>
+            <a href="#" id="hd">Today's Photo (HD)</a>
+            <div class="button">
+            <a href="javascript:void(0);" class="icon" onclick="openClose()">Menu</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="imageStuff">
+            <h2>Today's Photo</h2>
+            <div id="title"></div>
+            <div id="imageTitle"></div>
+            <div class="thePic"><img src="" id="dailyImageSD"><img src="" id="dailyImageHD"></div>
+        </div>
+        <div id="moreInfo">
+            <p>Date:</p>
+            <div id="date"></div>
+            <p>Explanation:</p>
+            <div id="explan"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Enjoy!</p>
+    </footer>
+</body>
+</html>
